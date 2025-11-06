@@ -1,0 +1,1 @@
+print("hello my name is smee and this is my first python script")
