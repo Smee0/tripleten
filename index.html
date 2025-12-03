@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <style>
+      :root{--accent:#2b6cb0;--muted:#6b7280;--bg:#f7fafc}
+      *{box-sizing:border-box}
+      body{font-family:Inter, system-ui, Arial, sans-serif;margin:0;color:#111;background:var(--bg);line-height:1.6}
+      .container{max-width:980px;margin:0 auto;padding:24px}
+      header{background:#fff;border-bottom:1px solid #e6edf3}
+      .site-header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+      .brand{display:flex;align-items:center;gap:12px}
+      .brand h1{margin:0;font-size:1.15rem}
+      nav ul{display:flex;gap:12px;margin:0;padding:0;list-style:none}
+      nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:6px}
+      nav a:hover{background:#eef6ff;color:var(--accent)}
+      #hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:48px 24px}
+      .hero-card{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(41,56,83,0.08)}
+      .hero-card h2{margin:0 0 10px;font-size:2rem}
+      .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+      section{padding:32px 0}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+      .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 10px rgba(17,24,39,0.04)}
+      .skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+      .skill{background:#eef6ff;color:var(--accent);padding:8px 10px;border-radius:999px;font-weight:600;font-size:0.9rem}
+      footer{padding:18px 24px;text-align:center;color:var(--muted);font-size:0.95rem}
+      @media(min-width:720px){#hero{grid-template-columns:1fr 360px}}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="site-header container">
+        <div class="brand">
+          <h1>Your Name</h1>
+          <div style="color:var(--muted);font-size:0.9rem">Data Science Portfolio</div>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="hero">
+        <div class="hero-card">
+          <h2>Welcome — I build data-driven solutions</h2>
+          <p style="color:var(--muted)">Hi, I'm <strong>Your Name</strong>. I analyze data, build machine learning models, and create clear visualizations that drive decisions. Explore my skills and projects below.</p>
+          <p style="margin-top:16px"><a class="cta" href="#about">Learn more about me</a></p>
+        </div>
+
+        <aside class="card">
+          <h3 style="margin-top:0">Quick Info</h3>
+          <p style="color:var(--muted);margin:0">Location: Your City • Role: Data Scientist • Open to opportunities</p>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h2>About Me</h2>
+          <p style="color:var(--muted)">I am a data scientist with experience in building end-to-end analytics solutions, from data collection and cleaning to modeling and deployment. I enjoy turning complex datasets into actionable insights and effective visual stories.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 style="margin-bottom:12px">Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3 style="margin-top:0">Programming & Tools</h3>
+            <div class="skills-list">
+              <span class="skill">Python</span>
+              <span class="skill">R</span>
+              <span class="skill">SQL</span>
+              <span class="skill">Pandas</span>
+              <span class="skill">NumPy</span>
+              <span class="skill">Git</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Machine Learning</h3>
+            <div class="skills-list">
+              <span class="skill">Scikit-learn</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">PyTorch</span>
+              <span class="skill">Model Evaluation</span>
+              <span class="skill">Feature Engineering</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Data & Visualization</h3>
+            <div class="skills-list">
+              <span class="skill">Data Visualization</span>
+              <span class="skill">Matplotlib</span>
+              <span class="skill">Seaborn</span>
+              <span class="skill">Plotly</span>
+              <span class="skill">Tableau</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 style="margin-top:0">Statistics & Big Data</h3>
+            <div class="skills-list">
+              <span class="skill">Statistics</span>
+              <span class="skill">A/B Testing</span>
+              <span class="skill">Big Data</span>
+              <span class="skill">ETL</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card">
+          <h2>Contact</h2>
+          <p style="color:var(--muted)">Replace this text with your preferred contact method — email, LinkedIn, or a contact form.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">Made with ♥ — replace with your preferred footer details.</div>
+    </footer>
+  </body>
+</html>
