@@ -20,7 +20,10 @@
       .hero-card{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(41,56,83,0.08);grid-column:1/-1;max-width:720px;margin:0 auto}
       .hero-card h2{margin:0 0 10px;font-size:2rem}
       .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
-      section{padding:32px 0}
+      /* reduce vertical spacing between main sections for a tighter layout */
+      section{padding:20px 0}
+      /* ensure hero copy matches site tone */
+      .hero-card p{color:var(--muted);margin:0}
       .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
       /* Force the main skills area into a predictable 2x2 on wider screens */
       .skills-grid{grid-template-columns:repeat(2,1fr)}
@@ -39,7 +42,7 @@
       <div class="site-header container">
         <div class="brand">
           <h1>Piotr G</h1>
-          <div style="color:var(--muted);font-size:0.9rem">Data Science Portfolio</div>
+          <div style="color:var(--muted);font-size:0.9rem">AI/ML Portfolio</div>
         </div>
         <nav aria-label="Primary">
         </nav>
@@ -49,9 +52,8 @@
     <main class="container">
       <section id="hero">
         <div class="hero-card">
-          <h2>About </h2>
-          <p style="color:var(--muted)">Hi, I'm <strong>Piotr G</strong>. I analyze data, develop machine learning models, and create clear, actionable visualizations that support data-driven decision-making.</p>
-          <p style="margin-top:16px"><a class="cta" href="#about">Learn more about me</a></p>
+          <h2>About Me</h2>
+          <p>Hi, I'm <strong>Piotr G</strong>. I analyze data, develop machine learning models, and create clear, actionable visualizations that support data-driven decision-making.</p>
         </div>
       </section>
       <section id="resume">
