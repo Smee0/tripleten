@@ -17,16 +17,21 @@
       nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:6px}
       nav a:hover{background:#eef6ff;color:var(--accent)}
       #hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:48px 24px}
-      .hero-card{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(41,56,83,0.08)}
+      .hero-card{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(41,56,83,0.08);grid-column:1/-1;max-width:720px;margin:0 auto}
       .hero-card h2{margin:0 0 10px;font-size:2rem}
       .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
       section{padding:32px 0}
       .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+      /* Force the main skills area into a predictable 2x2 on wider screens */
+      .skills-grid{grid-template-columns:repeat(2,1fr)}
       .card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 4px 10px rgba(17,24,39,0.04)}
       .skills-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
       .skill{background:#eef6ff;color:var(--accent);padding:8px 10px;border-radius:999px;font-weight:600;font-size:0.9rem}
       footer{padding:18px 24px;text-align:center;color:var(--muted);font-size:0.95rem}
       @media(min-width:720px){#hero{grid-template-columns:1fr 360px}}
+      @media(max-width:640px){
+        .skills-grid{grid-template-columns:1fr}
+      }
     </style>
   </head>
   <body>
@@ -44,7 +49,7 @@
     <main class="container">
       <section id="hero">
         <div class="hero-card">
-          <h2>About me</h2>
+          <h2>About </h2>
           <p style="color:var(--muted)">Hi, I'm <strong>Piotr G</strong>. I analyze data, develop machine learning models, and create clear, actionable visualizations that support data-driven decision-making.</p>
           <p style="margin-top:16px"><a class="cta" href="#about">Learn more about me</a></p>
         </div>
@@ -82,9 +87,9 @@
           </ul>
         </div>
 
-      <section id="Skills">
+      <section id="skills">
         <h2 style="margin-bottom:12px">Skills</h2>
-        <div class="grid">
+        <div class="grid skills-grid">
           <div class="card">
             <h3 style="margin-top:0">Programming & Tools</h3>
             <div class="skills-list">
